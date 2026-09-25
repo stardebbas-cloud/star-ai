@@ -4,7 +4,24 @@
   <title>STAR AI</title>
 </head>
 <body>
-  <h1>STAR AI</h1>
+  <h1>⭐ STAR AI</h1>
   <p>Welcome to STAR AI</p>
+
+  <div id="chat"></div>
+
+  <input id="message" type="text" placeholder="Ask STAR AI anything...">
+  <button onclick="sendMessage()">Send</button>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById("message");
+      const chat = document.getElementById("chat");
+
+      if (input.value.trim() === "") return;
+
+      chat.innerHTML += "<p><b>You:</b> " + input.value + "</p>";
+      input.value = "";
+    }
+  </script>
 </body>
 </html>

@@ -1,1 +1,1 @@
-# star-ai
+# STAR -AI

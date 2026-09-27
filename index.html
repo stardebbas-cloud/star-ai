@@ -106,8 +106,20 @@
 </div>
 
 <script>
-  function sendMessage() {
-  alert("STAR AI test");
+function sendMessage() {
+  const input = document.getElementById("message");
+  const chat = document.getElementById("chat");
+  const text = input.value.trim();
+
+  if (text === "") return;
+
+  const message = document.createElement("div");
+  message.className = "message user";
+  message.textContent = text;
+
+  chat.appendChild(message);
+  input.value = "";
+  chat.scrollTop = chat.scrollHeight;
 }
 </script>
 

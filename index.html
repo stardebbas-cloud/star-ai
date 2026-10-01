@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -71,8 +70,8 @@
       padding: 14px;
       border: none;
       border-radius: 12px;
-      font-size: 16px;
       outline: none;
+      font-size: 16px;
     }
 
     button {
@@ -89,26 +88,23 @@
 
 <div class="app">
   <header>
-  <h1>⭐ STAR AI</h1>
-  <small>Your AI Assistant</small>
-</header>
+    <h1>⭐ STAR AI</h1>
+    <small>Your AI Assistant</small>
+  </header>
 
-<div id="chat">
-  <div class="message ai">
-    Hello 👋 I'm STAR AI. How can I help you?
+  <div id="chat">
+    <div class="message ai">
+      Hello 👋 I'm STAR AI. How can I help you?
+    </div>
+  </div>
+
+  <div class="input-area">
+    <input id="message" type="text" placeholder="Message STAR AI...">
+    <button onclick="sendMessage()">Send</button>
   </div>
 </div>
 
-<div class="input-area">
-  <input id="message" type="text" placeholder="Message STAR AI...">
-  <button onclick="sendMessage()">Send</button>
-</div>
-
-</div>
-
-<scrip
-  const API_URL = "https://zjnaamzlmkcaobvubgnh.supabase.co/functions/v1/bright-function";
-  
+<script>
 function sendMessage() {
   const input = document.getElementById("message");
   const chat = document.getElementById("chat");
